@@ -50,7 +50,7 @@
         <xsl:param name="name" />
         <xsl:param name="title" />
         <xsl:param name="description" />
-        <xsl:param name="isRecursiveCall" />
+        <xsl:param name="is-recursive" />
 
         <xsl:choose>
             <xsl:when test="$path = '' or $path = '/'">
@@ -61,7 +61,7 @@
                     <xsl:when test="java:file-exists(concat($package-root, $path, '/.content.xml'), base-uri())">
                         <!-- content file already exists -->
                     </xsl:when>
-                    <xsl:when test="$isRecursiveCall = 'true' and //page/path = $path">
+                    <xsl:when test="$is-recursive = 'true' and //page/path = $path">
                         <!-- Catch a deeper call trying to create a page defined later in the file -->
                     </xsl:when>
                     <xsl:otherwise>                    
@@ -127,7 +127,7 @@
                     <xsl:with-param name="path" select="replace($path, '/[^/]*$', '')" />
                     <xsl:with-param name="name" select="replace($path, '.*/([^/]*$)', '$1')" />
                     <xsl:with-param name="title" select="replace($path, '.*/([^/]*$)', '$1')" />
-                    <xsl:with-param name="isRecursiveCall" select="'true'" />
+                    <xsl:with-param name="is-recursive" select="'true'" />
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
