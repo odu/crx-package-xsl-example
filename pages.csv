@@ -1,0 +1,11 @@
+Path,Title,Description
+/content/example,Example Home,This is the Example Homepage
+/content/example/about,About,This is about the Example Homepage
+/content/example/products/p/product-1,Product 1,This is Product 1
+/content/example/products/p/product-2,Product 2,This is Product 2
+/content/example/products/w/widget-1,Widget 1,This is Widget 1
+/content/example/products/w/widget-2,Widget 2,This is Widget 2
+/content/example/news/2013/5/widget-1-launch,Widget 1 Launch,Launched Widget 1
+/content/example/news/2013/6/widget-2-launch,Widget 2 Launch,Launched Widget 2
+/content/example/news/2013/5/product-1-launch,Product 1 Launch,Launched Product 1
+/content/example/news/2013/6/product-2-launch,Product 2 Launch,Launched Product 2

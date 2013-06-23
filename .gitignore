@@ -1,0 +1,4 @@
+lib/*.jar
+lib/vault.xsl
+package.zip
+out.xml

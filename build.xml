@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<project name="TranformXml" default="build-pages" xmlns:artifact="antlib:org.apache.maven.artifact.ant" xmlns:ac="antlib:net.sf.antcontrib">
+    <target name="build-pages">
+        <get src="http://repo1.maven.org/maven2/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8.jar" dest="lib/saxon9.jar" skipexisting="true" />
+        <get src="https://raw.github.com/odu/crx-package-xsl/master/vault.xsl" dest="lib/vault.xsl" skipexisting="true"/>
+        <get src="https://github.com/odu/csv2xml-anttask/blob/master/deploy/csv2xml-ant.jar?raw=true" dest="lib/csv2xml-ant.jar" skipexisting="true"/>        
+        <taskdef name="csv2xml" classname="ant.CSV2XMLTask">
+            <classpath location="lib/csv2xml-ant.jar" />
+        </taskdef>
+        <csv2xml dest="." delim="," root="pages" row="page">
+            <fileset dir="./">
+                <include name="**/*.csv"/>
+            </fileset>
+        </csv2xml>
+        <delete dir="package"/>
+        <delete file="package.zip"/>
+        <xslt in="pages.xml" out="out.xml" style="pages.xsl">
+            <classpath>
+                <fileset dir="lib" includes="saxon*.jar"/>
+            </classpath>
+            <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        </xslt>
+        <zip basedir="package" destfile="package.zip"/>
+    </target>
+</project>
