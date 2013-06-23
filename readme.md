@@ -40,9 +40,9 @@ The filters for a package are critical to get right, because CRX will likely blo
 
 A package that is deeply nested can still need folders and .content.xml files for all of the parents.  This example addresses this recurssively without overwriting something that had already created at that level and also without creating a stub .content.xml in a parent, that would really store content at that level.
 
-### Same Level Siblings
+### Same Level Child Nodes
 
-When your source data strecture doesn't mimic the same package structure, it may be difficult to include the siblings at the same level in .content.xml of the current item.
+When your source data strecture doesn't mimic the same package structure, it may be difficult to include the children at the same level in .content.xml of the current item.
 
 In this example, I have an illustration of this, the [/content/example/.content.xml](package/jcr_root/content/example/.content.xml) item has content and lives in the same tree as all of the other nodes.  So when creating this, any of the other item paths at the same level also need to be included, but not duplicates (so about, products, and news).
 
