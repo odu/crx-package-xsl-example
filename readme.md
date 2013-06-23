@@ -38,7 +38,7 @@ The filters for a package are critical to get right, because CRX will likely blo
 
 ### Empty Parents
 
-A package that is deeply nested can still need folders and .content.xml files for all of the parents.  This example addresses this recurssively without overighting something that had already created at that level and also without creating a stub .content.xml in a parent, that would really store content at that level.
+A package that is deeply nested can still need folders and .content.xml files for all of the parents.  This example addresses this recurssively without overwriting something that had already created at that level and also without creating a stub .content.xml in a parent, that would really store content at that level.
 
 ### Same Level Siblings
 
