@@ -1,4 +1,4 @@
-# Build a CRX / AEM / CQ Package with XSL
+# CRX / AEM Package built w/ ANT + XSL
 
 This is an example of the [crx-package-xsl](https://github.com/odu/crx-package-xsl) helper in use, using Ant + XSL to go from CSV > XML > Many XML Files > CRX Package Zip.
 
