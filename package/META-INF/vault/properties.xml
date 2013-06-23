@@ -2,16 +2,16 @@
    <comment>FileVault Package Properties</comment>
    <entry key="createdBy">admin</entry>
    <entry key="name">Sample Pages Package</entry>
-   <entry key="lastModified">2013-06-23T00:36:20.255-04:00</entry>
+   <entry key="lastModified">2013-06-23T00:49:39.354-04:00</entry>
    <entry key="lastModifiedBy">admin</entry>
    <entry key="acHandling">merge_preserve</entry>
-   <entry key="created">2013-06-23T00:36:20.255-04:00</entry>
+   <entry key="created">2013-06-23T00:49:39.354-04:00</entry>
    <entry key="buildCount">1</entry>
    <entry key="version"/>
    <entry key="dependencies"/>
    <entry key="packageFormatVersion">2</entry>
    <entry key="description">Sample Pages Package</entry>
-   <entry key="lastWrapped">2013-06-23T00:36:20.255-04:00</entry>
+   <entry key="lastWrapped">2013-06-23T00:49:39.354-04:00</entry>
    <entry key="group">my_packages</entry>
    <entry key="lastWrappedBy">admin</entry>
 </properties>
